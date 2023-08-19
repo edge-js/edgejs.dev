@@ -179,7 +179,7 @@ However, if you are using tags where newlines can change the output meaning or m
 
 ```edge
 Hello
-@let('username', 'virk')
+@let(username = 'virk')
  {{ username }}
 ```
 
@@ -197,7 +197,7 @@ Hello
 
 ```edge
 Hello
-@let('username', 'virk')~
+@let(username = 'virk')~
  {{ username }}
 ```
 

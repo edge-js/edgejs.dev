@@ -1,6 +1,6 @@
 # Slots
 
-Slots are named outlets you can define within the component opening and closing tag using the `@slot` tag. The component can access slots using the `$slots` variable or render them using the `@renderSlot` component.
+Slots are named outlets you can define within the component opening and closing tag using the `@slot` tag. The component can access slots as functions via the `$slots` object.
 
 Let's create a card component and use slots to render different card sections.
 
@@ -15,11 +15,11 @@ Let's create a card component and use slots to render different card sections.
 
 <div {{ attributes }}>
   <div class="card_header">
-    @!renderSlot('header')
+    {{{ await $slots.header() }}}
   </div>
 
   <div class="card_contents">
-    @!renderSlot('content')
+    {{{ await $slots.content() }}}
   </div>
 </div>
 ```
@@ -51,7 +51,7 @@ The main slot refers to all the contents inside the component's opening and clos
   </div>
 
   <div class="card_contents">
-    @!renderSlot('main')
+    {{{ await $slots.main() }}}
   </div>
 </div>
 ```
@@ -82,11 +82,11 @@ In the following example, we define the `cardSize` and the `sizes` variables. Th
 
 <div class="{{ sizes[cardSize] }}">
   <div class="card_header">
-    @!renderSlot('header')
+    {{{ await $slots.header() }}}
   </div>
 
   <div class="card_contents">
-    @!renderSlot('content')
+    {{{ await $slots.content() }}}
   </div>
 </div>
 ```
@@ -120,13 +120,13 @@ However, a component can pass data to the slot when rendering it. Let's look at 
 <div class="{{ sizes[cardSize] }}">
   <div class="card_header">
     // highlight-start
-    @!renderSlot('header', { sizes, cardSize })
+    {{{ await $slots.header({ sizes, cardSize }) }}}
     // highlight-end
   </div>
 
   <div class="card_contents">
     // highlight-start
-    @!renderSlot('content', { sizes, cardSize })
+    {{{ await $slots.content({ sizes, cardSize }) }}}
     // highlight-end
   </div>
 </div>

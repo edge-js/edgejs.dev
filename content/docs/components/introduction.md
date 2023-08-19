@@ -80,13 +80,13 @@ Another way to access props is using the `$props` property. For example:
 
 Slots are named outlets with markup inside them. Since writing HTML markup within props can quickly become messy, the slots provide a better authoring experience.
 
-In the following example, we use the `@renderSlot` tag within the component to render the contents of the `main` slot.
+In the following example, we render the contents of the main slots using the `$slots.main` function.
 
 See also: [Slots reference](./slots.md)
 
 ```edge
 <button {{ $props.toAttrs() }}>
-  @!renderSlot('main')
+  {{{ await $slots.main() }}}
 </button>
 ```
 
@@ -118,15 +118,15 @@ Components as tags only work for components stored inside the `components` direc
 // title: views/component/modal.edge
 <div class="modal">
   <header>
-    @!renderSlot('header')
+    {{{ await $slots.header() }}}
   </header>
 
   <main>
-    @!renderSlot('content')
+    {{{ await $slots.content() }}}
   </main>
 
   <footer>
-    @!renderSlot('footer')
+    {{{ await $slots.footer() }}}
   </footer>
 </div>
 ```

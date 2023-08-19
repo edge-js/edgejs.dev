@@ -1,6 +1,6 @@
 # Introduction
 
-Edge is a **simple**, **modern**, and **batteries included** template engine for Node.js. Edge is similar to writing JavaScript. If you know JavaScript, you know Edge.
+Edge is a **simple**, **Modern**, and **batteries included** template engine for Node.js. Edge is similar to writing JavaScript. If you know JavaScript, you know Edge.
 
 <div class="feature_highlight">
 
@@ -16,7 +16,7 @@ Hello {{ user.username }}!
 <div class="feature_highlight">
 
 ```edge
-{{ user?.subscription.plan || 'Not subscribed' }}
+{{ user.subscription?.plan || 'Not subscribed' }}
 ```
 
 ::include{template="partials/features/js_expressions"}
@@ -86,17 +86,13 @@ You have made {{ payments.length }} payments so far.
 
 Many will not ask this question because all the popular template engines in the Node.js ecosystem are on life support or have barely innovated in the past few years.
 
-On the other hand, we have been using Edge inside [AdonisJS](https://adonisjs.com) for almost seven years and have implemented some great features like:
+On the other hand, we have evolved and used Edge inside [AdonisJS](https://adonisjs.com) for almost seven years. Following are some of the hand-picked features of Edge.
 
-- Components and Slots.
-- Provide/Inject API you might be familiar with from Vue.js.
+- Edge is not restrictive - You can write any JavaScript expression inside it.
+- Accurate error stack.
+- Simple mental model and no custom dialect to learn.
+- Components layer with support for slots and provide/inject API.
 - Icons integration with [Iconify](https://iconify.design/).
-
-If we ignore all the above features. Edge still provides a great DX in comparison to many other template engines.
-
-- Edge is not restrictive. You can write any JavaScript expression inside it.
-- Accurate error stacks
-- Simple mental model and no custom dialect
 - Extensible API. 80% of Edge features are implemented using the public API.
 
 ## Edge vs Vue.js / React / Svelte?
@@ -115,9 +111,7 @@ While JSX is excellent, it is technically not a template engine. JSX is a JavaSc
 
 On the other hand, Edge is a template engine that you can embed inside any markup language. Be it Markdown, JSON, YAML, and, of course, HTML.
 
-I like JSX for many reasons, including type safety (when used with TypeScript). Edge can be an excellent fit for individuals who enjoy the template engine's terse syntax and expressive nature. JSX can get verbose at times.
-
-<!-- EXAMPLES GOES HERE -->
+I like JSX for many reasons, including type safety (when used with TypeScript). However, JSX can get verbose and is slightly low-level to cater to everyone's taste. On the other hand, Edge can be an excellent fit for individuals who enjoy the template engine's terse syntax and expressive nature.
 
 ## Why should I use Edge?
 
@@ -139,6 +133,8 @@ We are seeking contributors to help us create syntax highlighting extensions for
 - **VSCode** - [Community contribution](https://marketplace.visualstudio.com/items?itemName=luongnd.edge). Haven't been updated in a long time and can be further improved.
 - **Vim** - We need contributors to help us highlight Edge on Vim.
 - **WebStorm** - Need contributors. The JetBrains issues tracker has an [open issue](https://youtrack.jetbrains.com/issue/WEB-41625/AdonisJS-.edge-template-engine-support) requesting a syntax highlighter.
+
+Do let us know by [opening an issue on Github](https://github.com/edge-js/edge/issues/new?title=Creating%20a%20syntax%20highlighter%20for%20%3Ccode%20editor%3E) if you decide to build an extension for a code editor. You can learn more about the Edge syntax by reading the [syntax specification](./syntax_specification.md) guide.
 
 ## Sponsors
 
