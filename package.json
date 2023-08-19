@@ -41,9 +41,6 @@
     "unpoly": "^3.3.0",
     "vite": "^4.4.9"
   },
-  "overrides": {
-    "@adonisjs/application": "7.1.2-5"
-  },
   "dependencies": {
     "@adonisjs/core": "^6.1.5-4",
     "@adonisjs/static": "^1.0.2",
