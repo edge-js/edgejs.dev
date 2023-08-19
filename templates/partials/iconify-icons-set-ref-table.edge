@@ -1,0 +1,35 @@
+@set('iconsCollection', await getIconifyIconsSet())
+
+<table>
+<thead>
+<tr>
+  <th>Icon set</th>
+  <th>Npm package</th>
+</tr>
+</thead>
+
+<tbody>
+@each((iconSet, identifier) in iconsCollection)
+<tr>
+  <td>
+    <a
+      href="https://icon-sets.iconify.design/{{ identifier }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ iconSet.name }}
+    </a>
+  </td>
+  <td>
+    <a
+      href="https://npm.im/@iconify-json/{{ identifier }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <code>@iconify-json/{{ identifier }}</code>
+    </a>
+  </td>
+</tr>
+@end
+</tbody>
+</table>

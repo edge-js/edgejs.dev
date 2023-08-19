@@ -1,0 +1,140 @@
+[
+  {
+    "permalink": "introduction",
+    "title": "Introduction",
+    "contentPath": "./introduction.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "getting_started",
+    "title": "Getting started",
+    "contentPath": "./getting_started.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "interpolation",
+    "title": "Interpolation",
+    "contentPath": "./interpolation.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "templates_state",
+    "title": "Templates state",
+    "contentPath": "./templates_state.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "conditionals",
+    "title": "Conditionals",
+    "contentPath": "./conditionals.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "loops",
+    "title": "Loops",
+    "contentPath": "./loops.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "partials",
+    "title": "Partials",
+    "contentPath": "./partials.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "debugging",
+    "title": "Debugging",
+    "contentPath": "./debugging.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "syntax_specification",
+    "title": "Syntax specification",
+    "contentPath": "./syntax_specification.md",
+    "category": "Guides"
+  },
+  {
+    "permalink": "components/introduction",
+    "title": "Introduction",
+    "contentPath": "./components/introduction.md",
+    "category": "Components"
+  },
+  {
+    "permalink": "components/props",
+    "title": "Props",
+    "contentPath": "./components/props.md",
+    "category": "Components"
+  },
+  {
+    "permalink": "components/slots",
+    "title": "Slots",
+    "contentPath": "./components/slots.md",
+    "category": "Components"
+  },
+  {
+    "permalink": "components/provide_inject",
+    "title": "Provide/Inject",
+    "contentPath": "./components/provide_inject.md",
+    "category": "Components"
+  },
+  {
+    "permalink": "uikit/introduction",
+    "title": "Introduction",
+    "draft": true,
+    "contentPath": "./uikit/introduction.md",
+    "category": "UIKit"
+  },
+  {
+    "permalink": "uikit/form_controls",
+    "title": "Form controls",
+    "draft": true,
+    "contentPath": "./uikit/form_controls.md",
+    "category": "UIKit"
+  },
+  {
+    "permalink": "uikit/formatted_inputs",
+    "title": "Formatted inputs",
+    "draft": true,
+    "contentPath": "./uikit/formatted_inputs.md",
+    "category": "UIKit"
+  },
+  {
+    "permalink": "uikit/tabs",
+    "title": "Tabs",
+    "draft": true,
+    "contentPath": "./uikit/tabs.md",
+    "category": "UIKit"
+  },
+  {
+    "permalink": "uikit/alerts",
+    "title": "Alerts",
+    "draft": true,
+    "contentPath": "./uikit/alerts.md",
+    "category": "UIKit"
+  },
+  {
+    "permalink": "uikit/accordion",
+    "title": "Accordion",
+    "draft": true,
+    "contentPath": "./uikit/accordion.md",
+    "category": "UIKit"
+  },
+  {
+    "permalink": "helpers",
+    "title": "Helpers",
+    "contentPath": "./digging_deeper/helpers.md",
+    "category": "Digging deeper"
+  },
+  {
+    "permalink": "edge-iconify",
+    "title": "SVG icons",
+    "contentPath": "./uikit/iconify.md",
+    "category": "Digging deeper"
+  },
+  {
+    "permalink": "creating-custom-tags",
+    "title": "Creating custom tags",
+    "contentPath": "./digging_deeper/creating-custom-tags.md",
+    "category": "Digging deeper"
+  }
+]

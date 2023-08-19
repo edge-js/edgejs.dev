@@ -1,0 +1,19 @@
+{
+  "links": {
+    "home": {
+      "title": "EdgeJS",
+      "href": "/"
+    },
+    "github": {
+      "title": "Edge on Github",
+      "href": "https://github.com/edge-js/edge"
+    }
+  },
+  "sponsors_sources": [
+    "https://raw.githubusercontent.com/thetutlage/static/main/sponsorkit/sponsors.json"
+  ],
+  "search": {
+  },
+  "fileEditBaseUrl": "https://github.com/edge-js/edgejs.dev/blob/develop",
+  "copyright": "EdgeJS"
+}
