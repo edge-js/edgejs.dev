@@ -1,3 +1,7 @@
+---
+summary: In-depth guide on Edge syntax specification
+---
+
 # Syntax specification
 
 This document outlines the Edge templating syntax specification. You can reference this doc to understand the Edge internals better or create a syntax highlighter for your favorite code editor.

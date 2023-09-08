@@ -1,3 +1,7 @@
+---
+summary: API reference for global helpers bundled with Edge
+---
+
 # Helpers
 Following is the list of globally available helpers within Edge templates.
 

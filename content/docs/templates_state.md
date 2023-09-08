@@ -1,3 +1,7 @@
+---
+summary: Learn about different APIs to define template state
+---
+
 # Templates state
 
 Templates state refers to the data the templates can access during their rendering phase. Edge provides four layers to pass or define the template state.

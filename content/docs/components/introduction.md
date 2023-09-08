@@ -1,3 +1,7 @@
+---
+summary: A quick introduction to the components API
+---
+
 # Components
 
 Components allows you to split the application UI into reusable pieces with isolated state. You can use components to define layouts or create a collection of different UI elements.

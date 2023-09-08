@@ -1,3 +1,7 @@
+---
+summary: Partials are reusable templates with access to the state of the parent template
+---
+
 # Partials
 
 Partials are markup fragments created to reuse them across different templates. Partials have access to all the data available to the parent template, including [inline variables](./templates_state.md#inline-variables).

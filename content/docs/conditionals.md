@@ -1,3 +1,7 @@
+---
+summary: Learn how to write conditionals in Edge
+---
+
 # Conditionals
 
 You can write conditional blocks within Edge templates using the `@if`, `@elseif`, and the `@else` tags. The inner working of these tags is similar to the JavaScript `if/else` statements.

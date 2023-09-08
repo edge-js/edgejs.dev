@@ -1,3 +1,7 @@
+---
+summary: In-depth guide on creating custom Edge tags
+---
+
 # Creating custom tags
 
 Most of the Edge features are implemented using its public tags API, which you can use to extend the Edge capabilities further.

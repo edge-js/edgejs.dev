@@ -1,3 +1,7 @@
+---
+summary: Everything you need to know when upgrading from v5 to v6
+---
+
 # Upgrading to version 6
 
 The latest release of Edge contains a handful of breaking changes, some performance improvements and most importantly works only with ES modules. This guide covers the steps you must follow to upgrade to `edge.js@6`.

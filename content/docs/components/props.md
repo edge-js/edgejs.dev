@@ -1,3 +1,7 @@
+---
+summary: Learn how to pass props to components in Edge
+---
+
 # Props
 
 Props are the primary way to share data with a component when rendering it. A component can accept any props without maintaining a list of allowed props.

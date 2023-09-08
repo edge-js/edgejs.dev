@@ -1,3 +1,7 @@
+---
+summary: Learn how to define markup using slots
+---
+
 # Slots
 
 Slots are named outlets you can define within the component opening and closing tag using the `@slot` tag. The component can access slots as functions via the `$slots` object.

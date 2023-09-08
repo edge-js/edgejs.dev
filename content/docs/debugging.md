@@ -1,3 +1,7 @@
+---
+summary: Debug templates using the Node.js debugger
+---
+
 # Debugging
 
 You can debug a template's values or state using one of the following approaches. 

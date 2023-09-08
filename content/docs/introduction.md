@@ -1,3 +1,7 @@
+---
+summary: Edge is a simple, Modern and batteries included template engine for Node.js
+---
+
 # Introduction
 
 Edge is a **simple**, **Modern**, and **batteries included** template engine for Node.js. Edge is similar to writing JavaScript. If you know JavaScript, you know Edge.

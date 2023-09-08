@@ -1,3 +1,7 @@
+---
+summary: Learn how to share state with a component tree using the provide/inject API
+---
+
 # Provide/inject API
 The provide/inject API is inspired by the [Svelte's context API](https://svelte.dev/tutorial/context-api) and the [Vue's provide/inject API](https://vuejs.org/guide/components/provide-inject.html#provide-inject). The purpose is to share the state with a component tree without explicitly passing it as props.
 

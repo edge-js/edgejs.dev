@@ -1,3 +1,7 @@
+---
+summary: Learn how to loop over Arrays and Objects in Edge
+---
+
 # Loops
 
 You can loop over `Objects` and `Arrays` using the `@each` tag. The `each` tag's inner workings are similar to the JavaScript `for of` loop.
