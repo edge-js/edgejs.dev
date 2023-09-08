@@ -44,6 +44,6 @@
   "dependencies": {
     "@adonisjs/core": "^6.1.5-4",
     "@adonisjs/static": "^1.0.2",
-    "@adonisjs/view": "^7.0.0-2"
+    "edge.js": "^6.0.0-10"
   }
 }

@@ -8,11 +8,11 @@
 |
 */
 
+import edge from 'edge.js'
 import uiKit from 'edge-uikit'
 import collect from 'collect.js'
 import { dimer } from '@dimerapp/edge'
 import { readFile } from 'node:fs/promises'
-import view from '@adonisjs/view/services/main'
 import { RenderingPipeline } from '@dimerapp/edge'
 import { Collection, Renderer } from '@dimerapp/content'
 import { docsHook, docsTheme } from '@dimerapp/docs-theme'
@@ -21,14 +21,14 @@ import grammars, { theme } from '../vscode_grammars/main.js'
 
 type CollectionEntry = Exclude<ReturnType<Collection['findByPermalink']>, undefined>
 
-view.use(dimer)
-view.use(docsTheme)
-view.use(uiKit.default)
+edge.use(dimer)
+edge.use(docsTheme)
+edge.use(uiKit.default)
 
 /**
  * Globally loads the config file
  */
-view.global(
+edge.global(
   'getConfig',
   async () => JSON.parse(await readFile(new URL('../content/config.json', import.meta.url), 'utf-8'))
 )
@@ -36,7 +36,7 @@ view.global(
 /**
  * Globally loads the sponsors file
  */
-view.global(
+edge.global(
   'getSponsors',
   async () => JSON.parse(await readFile(new URL('../content/sponsors.json', import.meta.url), 'utf-8'))
 )
@@ -44,7 +44,7 @@ view.global(
 /**
  * Globally loads the sponsors file
  */
-view.global(
+edge.global(
   'getIconifyIconsSet',
   async () => {
     return JSON.parse(await readFile(new URL('../content/iconify-collections.json', import.meta.url), 'utf-8'))
@@ -54,7 +54,7 @@ view.global(
 /**
  * Returns sections for a collection
  */
-view.global('getSections', function (collection: Collection, entry: CollectionEntry) {
+edge.global('getSections', function (collection: Collection, entry: CollectionEntry) {
   const entries = collection.all()
 
   return collect(entries).groupBy<any, string>('meta.category').map((items, key) => {
@@ -90,7 +90,7 @@ pipeline.use(docsHook).use((node) => {
 /**
  * Configuring renderer
  */
-export const renderer = new Renderer(view, pipeline)
+export const renderer = new Renderer(edge, pipeline)
   // .codeBlocksTheme('material-theme-palenight')
   .codeBlocksTheme(theme)
   .useTemplate('docs')
