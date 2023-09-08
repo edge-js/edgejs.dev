@@ -1,5 +1,5 @@
 @layout('layouts/main')
-@set('siteConfig', await getConfig())
+@let(siteConfig = await getConfig())
 
 @section('body')
   @component('docs::header', siteConfig)
