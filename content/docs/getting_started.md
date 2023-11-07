@@ -15,7 +15,7 @@ Edge is an ESM-only package, and therefore your applications must use ES modules
 
 
 ```sh
-npm i edge.js@next
+npm i edge.js
 ```
 
 You can start using Edge as soon as you install it. You do not need any compiler or build tools to compile the templates.

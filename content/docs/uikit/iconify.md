@@ -6,7 +6,7 @@ Edge has an official integration for rendering icons using [Iconify](https://ico
 The Edge and Iconify integration is a plugin you must install from the npm packages registry.
 
 ```sh
-npm i edge-iconify@next
+npm i edge-iconify
 ```
 
 The next step is to register the plugin with Edge.
