@@ -134,7 +134,7 @@ If you swim in the `<your-frontend-framework>` ecosystem, you do not need Edge. 
 We are seeking contributors to help us create syntax highlighting extensions for all mainstream code editors.
 
 - **Sublime Text** - [Officially supported](https://github.com/edge-js/edge-sublime)
-- **VSCode** - [Community contribution](https://marketplace.visualstudio.com/items?itemName=luongnd.edge). Haven't been updated in a long time and can be further improved.
+- **VSCode** - [Officially supported](https://marketplace.visualstudio.com/items?itemName=AdonisJS.vscode-edge)
 - **Vim** - We need contributors to help us highlight Edge on Vim.
 - **WebStorm** - Need contributors. The JetBrains issues tracker has an [open issue](https://youtrack.jetbrains.com/issue/WEB-41625/AdonisJS-.edge-template-engine-support) requesting a syntax highlighter.
 

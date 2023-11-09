@@ -2,16 +2,16 @@
 @import '@docsearch/css';
 
 /* Gray colors */
-@import '@radix-ui/colors/mauve.css';
-@import '@radix-ui/colors/mauve-alpha.css';
-@import '@radix-ui/colors/mauve-dark.css';
-@import '@radix-ui/colors/mauve-dark-alpha.css';
+@import '@radix-ui/colors/sage.css';
+@import '@radix-ui/colors/sage-alpha.css';
+@import '@radix-ui/colors/sage-dark.css';
+@import '@radix-ui/colors/sage-dark-alpha.css';
 
 /* Accent colors */
-@import '@radix-ui/colors/pink.css';
-@import '@radix-ui/colors/pink-alpha.css';
-@import '@radix-ui/colors/pink-dark.css';
-@import '@radix-ui/colors/pink-dark-alpha.css';
+@import '@radix-ui/colors/teal.css';
+@import '@radix-ui/colors/teal-alpha.css';
+@import '@radix-ui/colors/teal-dark.css';
+@import '@radix-ui/colors/teal-dark-alpha.css';
 
 /* Interface colors */
 @import '@radix-ui/colors/orange-alpha.css';
@@ -28,33 +28,146 @@
 }
 
 :root {
-  --note-icon-color: var(--pink-11);
-  --code-bg-color: var(--pink-a3);
-  --code-text-color: var(--pink-a12);
-  --sidebar-active-link-bg-color: var(--pink-a6);
-  --sidebar-active-link-text-color: var(--pink-12);
-  --sidebar-loading-link-bg-color: var(--pink-a3);
-  --aside-active-link-text-color: var(--pink-11);
-  --pre-tabs-active-border-color: var(--pink-10);
-  --code-highlight-border-color: var(--pink-10);
+  --note-icon-color: var(--teal-11);
+  --code-bg-color: var(--teal-a3);
+  --code-text-color: var(--teal-a12);
+  --sidebar-active-link-bg-color: var(--teal-a6);
+  --sidebar-active-link-text-color: var(--teal-12);
+  --sidebar-loading-link-bg-color: var(--teal-a3);
+  --aside-active-link-text-color: var(--teal-11);
+  --pre-tabs-active-border-color: var(--teal-10);
+  --code-highlight-border-color: var(--teal-10);
 
-  --caption-info-bg-color: var(--pink-10);
-  --caption-info-border-color: var(--pink-10);
+  --caption-info-bg-color: var(--teal-10);
+  --caption-info-border-color: var(--teal-10);
+
+  --surface-bg-color: var(--sage-1);
+  --base-text-color: var(--sage-12);
+  --header-bg-color: var(--sage-1);
+  --local-nav-bg-color: var(--sage-1);
+  --header-border-color: var(--sage-6);
+  --sidebar-border-color: var(--sage-6);
+  --aside-border-color: var(--sage-6);
+  --nav-items-link-color: var(--sage-11);
+  --nav-items-hover-link-color: var(--sage-12);
+  --nav-item-separator-color: var(--sage-7);
+  --popup-menu-bg-color: var(--sage-4);
+  --popup-menu-link-color: var(--sage-12);
+  --popup-menu-separator-color: var(--sage-8);
+  --pre-background-color: var(--sage-12);
+  --sidebar-hover-link-bg-color: var(--sage-a5);
+  --aside-link-text-color: var(--sage-11);
+  --prose-table-border-color: var(--sage-a6);
+  --pre-title-border-color: var(--sage-11);
+  --pre-title-text-color: var(--sage-8);
+  --pre-tabs-text-color: var(--sage-9);
+  --pre-tabs-active-text-color: var(--sage-1);
+  --code-comment-color: var(--sage-9);
+  --disclosure-wrapper-border-color: var(--sage-6);
+  --disclosure-wrapper-bg-color: var(--sage-4);
+  --disclosure-panel-border-color: var(--sage-6);
+  --disclosure-panel-bg-color: var(--sage-1);
+  --feature-highlight-border-color: var(--sage-a12);
+  --feature-highlight-list-color: var(--sage-1);
+  --sponsor-item-border-color: var(--sage-8);
+  --prose-h2-border-color: var(--sage-4);
+  --prose-blockquote-bg-color: var(--sage-a3);
+  --prose-alert-bg-color: var(--sage-a3);
+  --prose-alert-border-color: var(--sage-a4);
+  --aside-sponsor-bg-color: var(--sage-4);
+  --aside-sponsor-text-color: var(--sage-11);
+  --aside-sponsor-hover-text-color: var(--sage-12);
+  --footer-text-color: var(--sage-11);
+  --footer-hover-text-color: var(--sage-12);
+  --footer-border-color: var(--sage-6);
+  --prose-dl-border-color: var(--sage-4);
+  --prose-hr-border-color: var(--sage-4);
+  --search-bg-color: var(--sage-a4);
+  --docsearch-muted-color: var(--sage-11);
+  --docsearch-searchbox-focus-background: var(--sage-5);
+  --docsearch-modal-background: var(--sage-2);
+  --docsearch-hit-background: var(--sage-4);
+  --docsearch-hit-active-color: var(--sage-1);
+  --docsearch-logo-color: var(--sage-11);
+  --docsearch-footer-background: var(--sage-3);
+  --docsearch-hit-color: var(--sage-12);
+  --docsearch-key-gradient: var(--sage-6);
+  --docsearch-footer-shadow: 0 -1px 0 0 var(--sage-6),0 -1px 0px 0 rgba(69,98,155,0.12);
+  --docsearch-primary-color: var(--teal-9);
 }
 
 html.dark {
-  --note-icon-color: var(--pink-11);
-  --code-bg-color: var(--pink-a3);
-  --code-text-color: var(--pink-a12);
-  --sidebar-active-link-text-color: var(--pink-12);
-  --sidebar-active-link-bg-color: var(--pink-a5);
-  --sidebar-loading-link-bg-color:var(--pink-a7);
-  --aside-active-link-text-color: var(--pink-11);
-  --pre-tabs-active-border-color: var(--pink-a10);
-  --code-highlight-border-color: var(--pink-9);
+  --note-icon-color: var(--teal-11);
+  --code-bg-color: var(--teal-a3);
+  --code-text-color: var(--teal-a12);
+  --sidebar-active-link-text-color: var(--teal-12);
+  --sidebar-active-link-bg-color: var(--teal-a5);
+  --sidebar-loading-link-bg-color:var(--teal-a7);
+  --aside-active-link-text-color: var(--teal-11);
+  --pre-tabs-active-border-color: var(--teal-a10);
+  --code-highlight-border-color: var(--teal-9);
 
-  --caption-info-bg-color: var(--pink-a9);
-  --caption-info-border-color: var(--pink-a9);
+  --caption-info-bg-color: var(--teal-a9);
+  --caption-info-border-color: var(--teal-a9);
+
+  --surface-bg-color: var(--sage-1);
+  --header-bg-color: var(--sage-1);
+  --local-nav-bg-color: var(--sage-1);
+  --header-border-color: var(--sage-4);
+  --sidebar-border-color: var(--sage-4);
+  --aside-border-color: var(--sage-4);
+  --base-text-color: var(--sage-12);
+  --nav-items-link-color: var(--sage-11);
+  --nav-items-hover-link-color: var(--sage-12);
+  --nav-item-separator-color: var(--sage-7);
+  --popup-menu-bg-color: var(--sage-4);
+  --popup-menu-link-color: var(--sage-12);
+  --popup-menu-separator-color: var(--sage-8);
+  --prose-text-color: var(--sage-11);
+  --prose-headings-color: var(--base-text-color);
+  --pre-background-color: var(--sage-3);
+  --sidebar-link-text-color: var(--sage-11);
+  --sidebar-hover-link-bg-color: var(--sage-a5);
+  --sidebar-hover-link-text-color: var(--sage-12);
+  --aside-link-text-color: var(--sage-11);
+  --prose-table-border-color: var(--sage-a5);
+  --pre-title-border-color: var(--sage-a5);
+  --pre-title-text-color: var(--sage-11);
+  --pre-tabs-text-color: var(--sage-11);
+  --pre-tabs-active-text-color: var(--sage-12);
+  --code-comment-color: var(--sage-11);
+  --disclosure-wrapper-border-color: var(--sage-6);
+    --disclosure-wrapper-bg-color: var(--sage-4);
+    --disclosure-panel-border-color: var(--sage-6);
+    --disclosure-panel-bg-color: var(--sage-1);
+    --feature-highlight-border-color: var(--sage-a4);
+    --feature-highlight-list-color: var(--sage-12);
+    --sponsor-item-border-color: var(--sage-8);
+    --prose-h2-border-color: var(--sage-4);
+    --prose-blockquote-bg-color: var(--sage-3);
+    --prose-alert-bg-color: var(--sage-3);
+    --prose-alert-border-color: var(--sage-5);
+    --aside-sponsor-bg-color: var(--sage-3);
+    --aside-sponsor-text-color: var(--sage-11);
+    --aside-sponsor-hover-text-color: var(--sage-12);
+    --footer-text-color: var(--sage-11);
+    --footer-hover-text-color: var(--sage-12);
+    --footer-border-color: var(--sage-4);
+    --prose-dl-border-color: var(--sage-4);
+    --prose-hr-border-color: var(--sage-4);
+    --docsearch-modal-background: var(--sage-2);
+    --docsearch-hit-background: var(--sage-4);
+    --docsearch-logo-color: var(--sage-11);
+    --docsearch-footer-background: var(--sage-3);
+    --docsearch-hit-color: var(--sage-12);
+    --docsearch-hit-active-color: var(--sage-12);
+    --docsearch-key-gradient: var(--sage-6);
+    --docsearch-footer-shadow: 0 -1px 0 0 var(--sage-6),0 -1px 0px 0 rgba(69,98,155,0.12);
+    --search-bg-color: var(--sage-5);
+    --docsearch-default-text-color: var(--sage-11);
+    --docsearch-muted-color: var(--sage-11);
+    --docsearch-searchbox-focus-background: var(--sage-5);
+    --docsearch-primary-color: var(--teal-9);
 }
 
 .sponsors_list .sponsor_item.logo_cleavr img {

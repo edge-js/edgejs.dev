@@ -20,7 +20,7 @@ You may include a partial inside a template using the `@include` tag. The tag ac
 
 You may include partials from other disks by prefixing the disk name before the template path.
 
-```ts
+```edge
 @include('shared::partials/header')
 @include('shared::partials/footer')
 ```
