@@ -21,14 +21,14 @@ For example, you can use globals to share the website config with all the templa
 
 ```ts
 edge.global('config', {
-  colorSheme: 'dark',
+  colorScheme: 'dark',
   menu: [],
   socialLinks: [],
 })
 ```
 
 ```edge
-<html class="{{ config.colorSchema }}">
+<html class="{{ config.colorScheme }}">
   <head>
   <head>
 
