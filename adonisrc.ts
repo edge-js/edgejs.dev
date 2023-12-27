@@ -1,21 +1,20 @@
-import { defineConfig } from "@adonisjs/core/app"
+import { defineConfig } from '@adonisjs/core/app'
 
 export default defineConfig({
-  "typescript": true,
-  "directories": {
-    "views": "templates"
+  typescript: true,
+  directories: {
+    views: 'templates',
   },
-  "providers": [
-    () => import("@adonisjs/core/providers/app_provider"),
-    () => import("@adonisjs/core/providers/http_provider"),
-    () => import("@adonisjs/core/providers/edge_provider"),
-    () => import("@adonisjs/vite/vite_provider"),
-    () => import("@adonisjs/static/static_provider"),
+  providers: [
+    () => import('@adonisjs/core/providers/app_provider'),
+    () => import('@adonisjs/core/providers/edge_provider'),
+    () => import('@adonisjs/vite/vite_provider'),
+    () => import('@adonisjs/static/static_provider'),
   ],
-  "metaFiles": [
+  metaFiles: [
     {
-      "pattern": "./public/**/*",
-      "reloadServer": false
-    }
-  ]
+      pattern: './public/**/*',
+      reloadServer: false,
+    },
+  ],
 })

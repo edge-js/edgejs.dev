@@ -23,33 +23,30 @@ type CollectionEntry = Exclude<ReturnType<Collection['findByPermalink']>, undefi
 
 edge.use(dimer)
 edge.use(docsTheme)
-edge.use(uiKit.default)
+edge.use(uiKit)
 
 /**
  * Globally loads the config file
  */
-edge.global(
-  'getConfig',
-  async () => JSON.parse(await readFile(new URL('../content/config.json', import.meta.url), 'utf-8'))
+edge.global('getConfig', async () =>
+  JSON.parse(await readFile(new URL('../content/config.json', import.meta.url), 'utf-8'))
 )
 
 /**
  * Globally loads the sponsors file
  */
-edge.global(
-  'getSponsors',
-  async () => JSON.parse(await readFile(new URL('../content/sponsors.json', import.meta.url), 'utf-8'))
+edge.global('getSponsors', async () =>
+  JSON.parse(await readFile(new URL('../content/sponsors.json', import.meta.url), 'utf-8'))
 )
 
 /**
  * Globally loads the sponsors file
  */
-edge.global(
-  'getIconifyIconsSet',
-  async () => {
-    return JSON.parse(await readFile(new URL('../content/iconify-collections.json', import.meta.url), 'utf-8'))
-  }
-)
+edge.global('getIconifyIconsSet', async () => {
+  return JSON.parse(
+    await readFile(new URL('../content/iconify-collections.json', import.meta.url), 'utf-8')
+  )
+})
 
 /**
  * Returns sections for a collection
@@ -57,22 +54,26 @@ edge.global(
 edge.global('getSections', function (collection: Collection, entry: CollectionEntry) {
   const entries = collection.all()
 
-  return collect(entries).groupBy<any, string>('meta.category').map((items, key) => {
-    return {
-      title: key,
-      isActive: entry.meta.category === key,
-      items: items
-        .filter((item: CollectionEntry) => !item.meta.draft)
-        .map((item: CollectionEntry) => {
-          return {
-            href: item.permalink,
-            title: item.title,
-            isActive: item.permalink === entry.permalink
-          }
-        })
-        .all()
-    }
-  }).filter((section) => section.items.length).all()
+  return collect(entries)
+    .groupBy<any, string>('meta.category')
+    .map((items, key) => {
+      return {
+        title: key,
+        isActive: entry.meta.category === key,
+        items: items
+          .filter((item: CollectionEntry) => !item.meta.draft)
+          .map((item: CollectionEntry) => {
+            return {
+              href: item.permalink,
+              title: item.title,
+              isActive: item.permalink === entry.permalink,
+            }
+          })
+          .all(),
+      }
+    })
+    .filter((section) => section.items.length)
+    .all()
 })
 
 /**
