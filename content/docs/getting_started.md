@@ -4,6 +4,12 @@ summary: Get started by installing Edge inside an existing Node.js project
 
 # Getting started
 
+:::note
+
+If you are installing Edge inside an AdonisJS application, we recommend reading the [AdonisJS View & Template](https://docs.adonisjs.com/guides/views-and-templates) guide.
+
+:::
+
 You may install Edge inside an existing Node.js project from the npm packages registry.
 
 
@@ -90,7 +96,7 @@ The templates are re-compiled whenever you call the `edge.render` method. You ca
   <h1>
     // highlight-start
     Hello {{ username.toUpperCase() }}
-    // highlight-end    
+    // highlight-end
   </h1>
 </body>
 </html>
@@ -116,13 +122,13 @@ const BASE_URL = new URL('./', import.meta.url)
 edge.mount(new URL('views', BASE_URL))
 
 /**
- * Render home.edge file from 
+ * Render home.edge file from
  * {BASE_URL/views} directory
  */
 await edge.render('home')
 
 /**
- * Render pages/posts/index.edge file from 
+ * Render pages/posts/index.edge file from
  * {BASE_URL/views} directory
  */
 await edge.render('pages/posts/index')
@@ -170,7 +176,7 @@ edge.registerTemplate('uikit.button', {
 })
 ```
 
-Now, you can reference the above template as a component inside any other template. 
+Now, you can reference the above template as a component inside any other template.
 
 ```edge
 @!component('uikit.button', {
