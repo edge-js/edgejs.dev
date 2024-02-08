@@ -13,6 +13,9 @@
     "https://raw.githubusercontent.com/thetutlage/static/main/sponsorkit/sponsors.json"
   ],
   "search": {
+    "appId": "MZQXDH55K6",
+    "indexName": "edgejs",
+    "apiKey": "d415aa3418ed7319cb71a66cff5fa1cc"
   },
   "fileEditBaseUrl": "https://github.com/edge-js/edgejs.dev/blob/main",
   "copyright": "EdgeJS"
