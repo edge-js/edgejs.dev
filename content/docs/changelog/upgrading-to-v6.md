@@ -27,7 +27,7 @@ npm i edge-iconify@next
 ```
 
 ## Compatibility plugin
-If your projects are not ready for the breaking changes (except ESM migration), you can configure the `migrate` plugin that provides compatibility between version 5 and 6.
+If your projects are not ready for the breaking changes (except ESM migration), you can configure the `migrate` plugin at application startup that provides compatibility between version 5 and 6.
 
 ```ts
 import edge from 'edge.js'
