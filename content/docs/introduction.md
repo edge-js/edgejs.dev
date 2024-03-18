@@ -111,7 +111,7 @@ A better comparison will be Nunjucks vs. Edge or Pug vs. Edge.
 
 ## Edge vs JSX
 
-While JSX is excellent, it is technically not a template engine. JSX is a JavaScript syntax extension for XML, which most of the web uses to generate HTML.
+While JSX is excellent, it is technically not a template engine. JSX is a JavaScript syntax extension for XML, commonly used in frameworks like React, which many web developers employ to generate HTML.
 
 On the other hand, Edge is a template engine that you can embed inside any markup language. Be it Markdown, JSON, YAML, and, of course, HTML.
 
