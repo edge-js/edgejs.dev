@@ -72,6 +72,12 @@
     "category": "Components"
   },
   {
+    "permalink": "components/layouts",
+    "title": "Layouts",
+    "contentPath": "./components/layouts.md",
+    "category": "Components"
+  },
+  {
     "permalink": "components/provide_inject",
     "title": "Provide/Inject",
     "contentPath": "./components/provide_inject.md",
