@@ -4,7 +4,7 @@ summary: Learn how to use layouts using slots
 
 # Layouts
 
-You can use slots to render templates. Let's create a `index.edge` file inside the `views/components/layout` directory.
+You can use slots to render templates. Let's create a `app.edge` file inside the `views/components/layout` directory.
 
 ```edge
 // title: views/components/layout/app.edge
