@@ -26,7 +26,8 @@ Edit a `welcome.edge` file inside the `views` directory.
 In this exemple we want to render the main content of or welcome page using our `$slots.main` function, add a meta markup with `$slots.meta`, and change the default title. 
 
 ```edge
-@layout({ title: "Welcome page title" })
+// title: views/welcome.edge
+@layout.app({ title: "Welcome page title" })
   @slot('meta')
     <meta name="description" content="A welcome page made with EdgeJS">
   @endslot
