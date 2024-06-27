@@ -110,7 +110,7 @@ In the following example, the `<br />` tags will be not be escaped, however, the
 ```
 
 ## html.escape
-Escape HTML inside a string value. The double curly braces already escape the value, so use this method only when you are not using the three curly braces.
+Escape HTML inside a string value. The double curly braces already escape the value, so use this method only when you are using the triple curly braces.
 
 ```edge
 {{{ html.escape(post.content) }}}
