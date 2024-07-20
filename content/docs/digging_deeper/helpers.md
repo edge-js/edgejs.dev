@@ -234,13 +234,13 @@ Output
 You can use one of the following methods to transform a string case.
 
 ```edge
-{{ camelCase('hello-world') }}
-{{ snakeCase('hello-world') }}
-{{ dashCase('HelloWorld') }}
-{{ pascalCase('hello-world') }}
-{{ capitalCase('hello-world') }}
-{{ sentenceCase('hello-world') }}
-{{ dotCase('hello-world') }}
-{{ noCase('hello-world') }}
-{{ titleCase('hello-world') }}
+{{ camelCase('hello-world') }}     // Output: helloWorld
+{{ snakeCase('hello-world') }}     // Output: hello_world
+{{ dashCase('HelloWorld') }}       // Output: hello-world
+{{ pascalCase('hello-world') }}    // Output: HelloWorld
+{{ capitalCase('hello-world') }}   // Output: Hello-World
+{{ sentenceCase('hello-world') }}  // Output: Hello world
+{{ dotCase('hello-world') }}       // Output: hello.world
+{{ noCase('hello-world') }}        // Output: hello world
+{{ titleCase('hello-world') }}     // Output: Hello-World
 ```
