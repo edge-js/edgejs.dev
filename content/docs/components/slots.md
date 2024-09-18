@@ -10,7 +10,7 @@ Let's create a card component and use slots to render different card sections.
 
 ```edge
 // title: views/components/card.edge
-@let($attributes = $props
+@let(attributes = $props
   .merge({
     class: ['card']
   })
@@ -73,7 +73,7 @@ Slots defined using the `@slot` tag can access the state of the current template
 In the following example, we define the `cardSize` and the `sizes` variables. These variables are available only to the component, not the parent template slots.
 
 ```edge
-// title: views/component/card.edge
+// title: views/components/card.edge
 // highlight-start
 @let(cardSize = 'medium')
 
