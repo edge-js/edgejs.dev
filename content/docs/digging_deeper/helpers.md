@@ -50,7 +50,7 @@ Given the value of `user.name` is `null`, following will be the output HTML.
 <input id="name" placeholder="Enter your name" />
 ```
 
-The value of the attributes object must be a **string**, **boolean**, or an **array of strings**. If the value is `undefined`, `null` or `false`, the attribute will be removed from the output.
+The value of the attributes object must be a **string**, **boolean**, or an **array of strings**. If the value is `undefined`, `null`, `false`, or an `empty string`, the attribute will be removed from the output.
 
 | Value | Serialized output |
 |------------|--------------------|
