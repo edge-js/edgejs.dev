@@ -42,6 +42,12 @@
     "category": "Guides"
   },
   {
+    "permalink": "stacks",
+    "title": "Stacks",
+    "contentPath": "./stacks.md",
+    "category": "Guides"
+  },
+  {
     "permalink": "debugging",
     "title": "Debugging",
     "contentPath": "./debugging.md",
