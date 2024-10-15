@@ -24,7 +24,7 @@ You can use slots to render templates. Let's create a `app.edge` file inside the
 ```
 
 Edit the `welcome.edge` file inside the `views` directory.  
-In this example, we want to render the main content of welcome page using our `$slots.main` function, add a meta markup with `$slots.meta`, and change the default title. 
+In this example, we want to render the main content of our welcome page using `$slots.main` function, add a meta markup with `$slots.meta`, and change the default title. 
 
 ```edge
 // title: views/welcome.edge
