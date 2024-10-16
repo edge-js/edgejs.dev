@@ -33,7 +33,9 @@ In this exemple we want to render the main content of or welcome page using our 
     <meta name="description" content="A welcome page made with EdgeJS">
   @endslot
 
-  <h1>Hello world</h1>
+  @slot('main')
+    <h1>Hello world</h1>
+  @endslot
 @end
 ```
 
