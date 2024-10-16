@@ -22,7 +22,7 @@ Let's start by creating a button component. We will store it inside the `compone
 
 ```edge
 // title: views/components/button.edge
-<button type="{{ type || 'submit' }}"> {{ text }} </button>
+<button type="{{ type || 'submit' }}">{{ text }}</button>
 ```
 
 ## Using components
@@ -68,14 +68,14 @@ In Edge.js, when you pass attributes such as class, they can sometimes conflict 
 // title: views/components/button.edge
 <button type="{{ type || 'submit' }}" class="{{ btnClass }}">
     {{ text }}
-  </button>
+</button>
 ```
 
 
 ```edge
 @!component('components/button', {
   type: 'submit',
-  class: 'btn btn-large',
+  btnClass: 'btn btn-large',
   text: 'Login'
 })
 ```
