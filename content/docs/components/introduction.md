@@ -16,7 +16,7 @@ Before we talk more about components, let's understand how they differ from comp
 
 Components are regular Edge templates created with the purpose of reuse. Components can access additional runtime properties like `$props` and `$slots`, which are unavailable to other Edge templates.
 
-We recommend you create components inside the `components` directory of your template's root path. This helps create a visual boundary between the components and the rest of the templates used by your application.
+We recommend you create components inside the `components` directory of your template's root path. This helps create a visual boundary between the components and the rest of the templates used by your application. By default, the template root path in an AdonisJS project is usually set to the `resources/views` directory. 
 
 Let's start by creating a button component. We will store it inside the `components/button.edge` file. 
 
@@ -27,7 +27,7 @@ Let's start by creating a button component. We will store it inside the `compone
 
 ## Using components
 
-You must use the `@component` tag to render a component inside your templates. The component tag accepts the template path as the first parameter and `props` as the second parameter.
+You must use the `@!component` tag to render a component inside your templates. The component tag accepts the template path as the first parameter and `props` as the second parameter.
 
 ```edge
 <form>
@@ -57,8 +57,23 @@ The component props are passed as the second parameter using the `@component` ta
 
 See also: [Props reference](./props.md)
 
+:::note
+
+In Edge.js, when you pass attributes such as class, they can sometimes conflict with the reserved keywords or syntax. You can rename the class attribute to something else, like `btnClass`, and use that in both the component definition and when rendering the component.
+
+
+:::
+
 ```edge
-@component('components/button', {
+// title: views/components/button.edge
+<button type="{{ type || 'submit' }}" class="{{ btnClass }}">
+    {{ text }}
+  </button>
+```
+
+
+```edge
+@!component('components/button', {
   type: 'submit',
   class: 'btn btn-large',
   text: 'Login'
@@ -68,7 +83,7 @@ See also: [Props reference](./props.md)
 ```edge
 // title: Within the component
 {{ type }}
-{{ class }}
+{{ btnClass }}
 {{ text }}
 ```
 
@@ -97,7 +112,7 @@ See also: [Slots reference](./slots.md)
 The contents of the `main` slot are place between the opening and the closing tags.
 
 ```edge
-@component('components/button', {
+@!component('components/button', {
   class: ['flex', 'align-center', 'space-x-4']
 })
   <i class="fa-lock"></i>
