@@ -67,10 +67,7 @@ const application = new Ignitor(APP_ROOT, { importer: IMPORTER })
             },
           },
         },
-        vite: viteDefineConfig({
-          assetsUrl: '/assets',
-          buildDirectory: 'dist/assets',
-        }),
+        vite: viteDefineConfig({}),
       })
     })
   })
