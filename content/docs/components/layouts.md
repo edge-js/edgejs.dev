@@ -23,9 +23,11 @@ You can use slots to render templates. Let's create a `app.edge` file inside the
 </html>
 ```
 
+:::note
+
 Defining the layout inside the `components` directory allows us to leverage the [component as tags](./introduction.md#components-as-tags) feature. Since we are storing inside the `layout` directory and that we named the file `app.edge`, we can use the `@layout.app` tag to render the layout.
 
-```edge
+:::
 
 Edit the `welcome.edge` file inside the `views` directory.  
 In this example, we want to render the main content of our welcome page using `$slots.main` function, add a meta markup with `$slots.meta`, and change the default title. 
