@@ -12,14 +12,9 @@ npm i edge-iconify
 The next step is to register the plugin with Edge.
 
 ```ts
-import { Edge } from 'edge.js'
+import edge from 'edge.js'
 import { edgeIconify } from 'edge-iconify'
 
-const edge = Edge.create()
-
-/**
- * Register the plugin
- */
 edge.use(edgeIconify)
 ```
 

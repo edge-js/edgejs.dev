@@ -140,7 +140,13 @@
   {
     "permalink": "edge-iconify",
     "title": "SVG icons",
-    "contentPath": "./uikit/iconify.md",
+    "contentPath": "./digging_deeper/iconify.md",
+    "category": "Digging deeper"
+  },
+  {
+    "permalink": "edge-markdown",
+    "title": "Markdown rendering",
+    "contentPath": "./digging_deeper/edge-markdown.md",
     "category": "Digging deeper"
   },
   {
