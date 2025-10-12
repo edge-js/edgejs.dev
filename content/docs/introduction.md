@@ -135,6 +135,7 @@ We are seeking contributors to help us create syntax highlighting extensions for
 
 - **Sublime Text** - [Officially supported](https://github.com/edge-js/edge-sublime)
 - **VSCode** - [Officially supported](https://marketplace.visualstudio.com/items?itemName=AdonisJS.vscode-edge)
+- **Zed** - [Unofficially supported](https://zed.dev/extensions/edge) 
 - **Vim** - We need contributors to help us highlight Edge on Vim.
 - **WebStorm** - Need contributors. The JetBrains issues tracker has an [open issue](https://youtrack.jetbrains.com/issue/WEB-41625/AdonisJS-.edge-template-engine-support) requesting a syntax highlighter.
 
