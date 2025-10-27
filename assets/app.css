@@ -24,7 +24,7 @@
 :root {
   --logo-width: 100px;
   --mobile-logo-width: 30px;
-  --font-mono: "Roboto Mono";
+  --font-mono: 'Roboto Mono';
 }
 
 :root {
@@ -135,4 +135,20 @@ html.dark {
   --accent-a10: var(--teal-a10);
   --accent-a11: var(--teal-a11);
   --accent-a12: var(--teal-a12);
+}
+
+.dark_mode {
+  display: none;
+}
+.dark .dark_mode {
+  display: block;
+}
+.dark .light_mode {
+  display: none;
+}
+
+.cards_grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
 }
