@@ -237,6 +237,42 @@ The front-matter from all the Markdown files is auto-extracted, and you may acce
 {{ doc.frontmatter.summary }}
 ```
 
+If you only need the frontmatter without rendering the Markdown content, use the `$markdown.frontmatter` method. This is a lightweight operation that parses only the YAML frontmatter and skips the entire remark/rehype pipeline.
+
+```edge
+@let(meta = await $markdown.frontmatter({
+  file: absolutePathToMdFile
+}))
+
+{{ meta.title }}
+{{ meta.summary }}
+```
+
+The `$markdown.frontmatter` method accepts a `file` or `content` property, just like `$markdown.render`.
+
+```edge
+@let(meta = await $markdown.frontmatter({
+  content: rawMarkdownString
+}))
+```
+
+## Rendering a preview
+You can render a preview of a Markdown document using the `$markdown.preview` method. This method renders only the content before the first `h2` heading, which is useful for generating article summaries or content previews on listing pages.
+
+```edge
+@let(doc = await $markdown.preview({
+  file: absolutePathToMdFile
+}))
+
+<article>
+  <div>{{{ doc.content }}}</div>
+</article>
+```
+
+The `$markdown.preview` method accepts the same options as `$markdown.render` and returns `content`, `frontmatter`, and `messages` properties. Table of contents generation is automatically disabled for previews.
+
+If the document has no `h2` heading, the full content is rendered.
+
 ## Authoring components
 You can create reusable components to enhance your Markdown content with interactive elements and custom styling. Edge Markdown uses MDC (Markdown Components) syntax to embed Edge components directly within Markdown files.
 
