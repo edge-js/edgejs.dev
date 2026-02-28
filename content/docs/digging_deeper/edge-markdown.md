@@ -269,8 +269,7 @@ You can render a preview of a Markdown document using the `$markdown.preview` me
 </article>
 ```
 
-The `$markdown.preview` method accepts the same options as `$markdown.render` and returns `content`, `frontmatter`, and `messages` properties. Table of contents generation is automatically disabled for previews.
-
+The `$markdown.preview` method accepts the same options as `$markdown.render` and returns `content`, `frontmatter`, and `messages` properties. 
 If the document has no `h2` heading, the full content is rendered.
 
 ## Authoring components
