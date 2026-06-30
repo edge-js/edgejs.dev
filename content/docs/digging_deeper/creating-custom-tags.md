@@ -48,7 +48,7 @@ edge.registerTag(reverse)
  */
 const output = await edge.renderRaw('@reverse()')
 
-console.log(output) // I am the reverse tag
+console.log(output) // Hello from reverse tag
 ```
 
 - `block`: The `block` flag creates a block-level Edge tag which must be used with an opening and a closing statement. For example: The `@if` and `@each` tags are block-level.
